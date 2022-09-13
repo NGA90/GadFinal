@@ -24,13 +24,13 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">¿Quienes Somos?</a>
+                  <a class="nav-link" href="./quienessomos.html">¿Quienes Somos?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" href="./contacto.html">Contacto</a>
                 </li>
             </div>
         </div>
@@ -49,29 +49,25 @@
             </div>
           </div>
         </section>
-        <div class="container">
+        <div class="container-fluid">
             <h1 class="badge text-bg-secondary" style="font-size: 18px;">Dejanos tu consulta!</h1>
-            <form action="https://formsubmit.co/acunang@gmail.com" method="POST">
+            <form action="https://formspree.io/f/meqdeyja" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre" name="Nombre">
                 <hr>
                 <input type="tel" class="form-control" placeholder="Telefono" name="Telefono">
                 <hr>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email">
                 </div>
                 <hr>
-                <div class="form-group">
-                  <label for="exampleFormControlSelect1">¿Sos paciente?</label>
-                  <select class="form-control" id="exampleFormControlSelect1">
-                    <option>Si</option>
-                    <option>No</option>
-                   
-                  </select>
-                </div>
+                <label for="exampleFormControlSelect1">¿Sos paciente?</label>
+                <select class="form-control" id="exampleFormControlSelect1" name="Es Paciente?">
+                <option>Si</option>
+                <option>No</option>
+                </select>
                 <hr>
-            <div class="form-group">
                 <label for="exampleFormControlSelect2">ESPECIALIDAD</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
+                <select multiple class="form-control" id="exampleFormControlSelect2" name="Especialidad">
                 <option value="Kinesiologia">Kinesiologia</option>
                 <option value="RPG">RPG</option>
                 <option value="Osteopatia">Osteopatia</option>
@@ -83,16 +79,14 @@
                 <option value="Masajes">Masajes</option>
                 <option value="MEP">MEP</option>
                 <option value="Marcha">Marcha</option>
-                  </select>
-                </div>
+                </select>
                 <hr>
-                <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja aca tu mensaje!"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Deja aca tu mensaje!" name="Mensaje"></textarea>
                 </div>
-                <div class="custom-file">
+                <!--<div class="custom-file">
                     <label class="custom-file-label" for="customFileLang">Tenes orden medica?</label>
-                    <input type="file" class="custom-file-input" id="customFileLang" lang="es">
-                </div>
+                    <input type="file" class="custom-file-input" id="customFileLang" lang="es" name="Orden medica?">
+                </div>-->
                 <button class="btn btn-primary" type="submit">ENVIAR</button>
               </form>
         </div>
