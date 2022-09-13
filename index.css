@@ -24,7 +24,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 25rem;
 }
 
 
@@ -121,6 +121,10 @@ body {
     height: 120px;
   }
 
+  .carousel-item {
+    height: 10rem;
+  }
+
 }
 
 @media (max-width: 250px) {
@@ -135,23 +139,15 @@ body {
     height: 100px;
   }
   
-  #imagenchica1{
-    display: none;
-  }
-
-  #imagenchica2{
-    display: none;
-  }
-
-  #imagenchica3{
-    display: none;
-  }
-
-  body{
-    background-color: #000;
-  }
-  
   #Mapa{
     color: white;
+  }
+
+  #carouselExampleDark {
+    display: none;
+  }
+
+  #primeraimagen{
+    
   }
 }
